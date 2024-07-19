@@ -12,7 +12,7 @@ Strapi CMS Admin Portal for managing site content
 
 ## Built With
 [React](https://react.dev/) - The web framework used for the frontend.  
-[Strapi](https://strapi.io) - Headless CMS used for content management.  
+[Medusa](https://medusajs.com/) - Commerce Platform.  
 [Netlify](https://www.netlify.com/) - Hosting Service used for React frontend.  
 [Railway](https://railway.app/) - Hosting Service used for Strapi backend and Postgres DB.  
 [Cloudinary](https://cloudinary.com/) - Cloud service for storing and optimizing images.  
@@ -31,28 +31,22 @@ These instructions will get you a copy of the project up and running on your loc
 
 Configure env variables files, follow example files.
 
-#### Install dependencies for the React frontend
+#### Install dependencies and run Next.js Storefront
 
 ```bash
 cd frontend
-npm install
+npx @medusajs/medusa-cli develop
 ```
 
-#### Setup and run the Strapi backend
+#### Setup and run the Medusa backend
 
 ```bash
 cd ../backend
 npm install
-npm run develop
+npm run dev
 ```
 
-#### Run the React development server
-
-```bash
-npm start
-```
-
-Your default web browser should automatically open and load the homepage at http://localhost:3000.
+Your default web browser should automatically open and load the Admin Portal at http://localhost:7001/ and the Storefront at http://localhost:8000/
 
 ## Author
 
