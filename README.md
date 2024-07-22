@@ -36,6 +36,7 @@ Configure env variables files, follow example files.
 ```bash
 cd frontend
 npx @medusajs/medusa-cli develop
+npm run dev
 ```
 
 #### Setup and run the Medusa backend
